@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="pfl.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/2ebe7fc954.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="Screenshot_2024-09-26_153653-removebg-preview.png" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#service">services</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#contact">contact</a></li>
+          <i class="fas fa-times " onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars " onclick="openmenu()"></i>
+      </nav>
+      
+        
+        <div class="header-text">
+          <h1>
+
+            Hi, I'm<span> sunny</span><br/>
+            from india <br>
+
+            <p>DEVELOPER<br>UI/UX DESIGNER</p>
+
+          </h1>
+          
+          <div class="pic">
+            <div class="background">
+              <img src="ss.2024.png" alt="">
+            </div>
+          </div>
+        </div>
+      
+      <!---- <div class="pic">
+          <div class="background">
+         <img src="sunny.jpg" alt=""></div>
+        </div> 
+      </div> -->
+    </div>
+  </div>
+    <!--- ---------------about------------ -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Screenshot 2025-04-06 173329.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">about me</h1>
+            <p>
+              I am an enthusiastic and dedicated MCA integrated student with a strong passion for coding. With a keen
+              interest in programming languages and technology, I am always eager to learn and explore new coding
+              practices. Whether it’s working on complex algorithms, developing innovative software solutions, or diving
+              into the intricacies of C++, I approach every challenge with curiosity and determination. As a budding
+              programmer, I am committed to honing my skills and contributing to the tech community, making the most of
+              every opportunity to grow and excel in the field of computer science.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-link active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+
+              <p class="tab-link" onclick="opentab('experience')">Experiance</p>
+              <p class="tab-link" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-content active-tab" id="Skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>web Development</span><br />Web app development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/ios apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="experience">
+              <ul>
+                <li><span>years..</span><br />......................s</li>
+                <li><span>otheryears </span><br />----------------------</li>
+                <li><span>otheryears</span><br />_________________________</li>
+              </ul>
+            </div>
+            <div class="tab-content" id="Education">
+              <ul>
+                <li><span>2022</span><br />web design</li>
+                <li>
+                  <span>2022-present</span><br />MCA(integrated) from rbs campus
+                </li>
+                <li><span></span><br /></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------service--------------->
+    <div id="service">
+      <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="service-list">
+          <div class="card">
+            <i class="fa-solid fa-code"></i>
+            <h2>web Designing</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+              quaerat exercitationem maxime unde officia ut veniam, ipsam sit
+              ratione ipsa placeat iste dolore eum. Sint, modi. Quae quidem sint
+              cumque?
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-code-branch"></i>
+            <h2>UI/UX Designing</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+              quaerat exercitationem maxime unde officia ut veniam, ipsam sit
+              ratione ipsa placeat iste dolore eum. Sint, modi. Quae quidem sint
+              cumque?
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div class="card">
+            <i class="fa-duotone fa-solid fa-mobile"></i>
+            <h2>app development</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+              quaerat exercitationem maxime unde officia ut veniam, ipsam sit
+              ratione ipsa placeat iste dolore eum. Sint, modi. Quae quidem sint
+              cumque?
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------------portfolio------------------------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="converted_output.gif" alt="">
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>this app connets you to talented people around the world Download it from playstore. </p>
+              <a href="#"><i class="fa-duotone fa-solid fa-arrow-up-right-from-square"></i></a>
+
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-2.png" alt="">
+            <div class="layer">
+              <h3>music App</h3>
+              <p>this app connets you to talented people around the world Download it from playstore. </p>
+              <a href="#"><i class="fa-duotone fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-3.png" alt="">
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>this app connets you to talented people around the world Download it from playstore. </p>
+              <a href="#"><i class="fa-duotone fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="" class="btn">see more</a>
+      </div>
+    </div>
+    <!------------------contact-------------------->
+    <div id="contact">
+      <div class="container">
+
+        <div class="row">
+          <div class="con-left">
+            <div class="sub-title">contact me</div>
+            <p> <i class="fa-solid fa-envelope"></i>: sk2993130@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>: 0987654321</p>
+            <div class="social-icon">
+              <a href="https://www.instagram.com/stxxcsxnny/"><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="Cv.png" class="btn bt2 " download="">Download Cv</a>
+          </div>
+
+          <div class="con-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="your name" required>
+              <input type="email" name="Email" placeholder="Email" required>
+              <textarea name="Message" rows="6" placeholder="Message"></textarea>
+              <button type="submit" class="btn btn2">submit</button>
+   <span id="msg">hello!</span>
+            </form>
+         
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+
+        <p>copyright &#169 sunny. made by <i class="fas fa-heart"></i> me </p>
+      </div>
+    </div>
+    <script type="text/javascript" src="your-example.js"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzlNosVBwCu86ycS0E_VzSEt8ND0trptWH5geQEMfrLwZO3gMaWGvSlpZyiXs1xW2Y/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg");
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+            msg.innerHTML = "messeage sent succesfully!"
+            setTimeout(function () {
+              msg.innerHTML = ""
+            }, 1000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+</body>
+
+</html>
