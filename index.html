@@ -2,9 +2,13 @@
 <html lang="en">
 
 <head>
-  <title></title>
+ <title>Sunny | Developer & Designer Portfolio</title>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Sunny - Web Developer and UI/UX Designer from India. Explore projects and get in touch.">
+<meta name="keywords" content="Sunny, Portfolio, Web Developer, UI/UX Designer, India, MCA, Projects">
+<meta property="og:url" content="https://stxxcsxnny.github.io/portfolio/">
   <link href="pfl.css" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/2ebe7fc954.js" crossorigin="anonymous"></script>
 </head>
@@ -31,8 +35,8 @@
 
             Hi, I'm<span> sunny</span><br/>
             from india <br>
-
-            <p>DEVELOPER<br>UI/UX DESIGNER</p>
+              
+            <p><span id="typed1"></span></p>
 
           </h1>
           
@@ -42,12 +46,20 @@
             </div>
           </div>
         </div>
-      
-      <!---- <div class="pic">
-          <div class="background">
-         <img src="sunny.jpg" alt=""></div>
-        </div> 
-      </div> -->
+
+          <div class="picture">
+            <div class="background">
+              <img src="ss.2024.png" alt="">
+            </div>
+          </div>
+
+        <h1 class="intro-text">
+
+            Hi, I'm<span> sunny</span>
+            from india <br>
+           <p><span id="typed"></span></p>
+
+          </h1>
     </div>
   </div>
     <!--- ---------------about------------ -->
@@ -56,7 +68,7 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="Screenshot 2025-04-06 173329.png" alt="" />
+            <img src="aboutpic.png" alt="" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">about me</h1>
@@ -114,10 +126,7 @@
             <i class="fa-solid fa-code"></i>
             <h2>web Designing</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              quaerat exercitationem maxime unde officia ut veniam, ipsam sit
-              ratione ipsa placeat iste dolore eum. Sint, modi. Quae quidem sint
-              cumque?
+             Transform your ideas into stunning digital experiences with our expert web design services. We craft visually appealing, user-friendly, and responsive websites tailored to your unique brand and business needs. Whether you're looking for a sleek portfolio, an engaging e-commerce site, or a dynamic business platform, we bring creativity and functionality together for a seamless online presence. Let’s build something extraordinary!
             </p>
             <a href="#">learn more</a>
           </div>
@@ -125,10 +134,7 @@
             <i class="fa-solid fa-code-branch"></i>
             <h2>UI/UX Designing</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-              quaerat exercitationem maxime unde officia ut veniam, ipsam sit
-              ratione ipsa placeat iste dolore eum. Sint, modi. Quae quidem sint
-              cumque?
+           Elevate user experiences with intuitive and aesthetically pleasing designs. Our UI/UX design services focus on creating seamless, engaging, and functional interfaces that prioritize user needs. From wireframing to prototyping, we blend creativity with usability, ensuring every interaction feels natural and effortless. Let’s design experiences that captivate and convert!
             </p>
             <a href="#">learn more</a>
           </div>
@@ -155,24 +161,24 @@
             <img src="converted_output.gif" alt="">
             <div class="layer">
               <h3>Social Media App</h3>
-              <p>this app connets you to talented people around the world Download it from playstore. </p>
-              <a href="#"><i class="fa-duotone fa-solid fa-arrow-up-right-from-square"></i></a>
+              <p>Connect and collaborate with talented people worldwide! Our platform helps creators, artists, and entrepreneurs build meaningful connections. Check it out now on GitHub!. </p>
+              <a href="groovzz.netlify.app"><i class="fa-duotone fa-solid fa-arrow-up-right-from-square"></i></a>
 
             </div>
           </div>
           <div class="work">
             <img src="work-2.png" alt="">
             <div class="layer">
-              <h3>music App</h3>
-              <p>this app connets you to talented people around the world Download it from playstore. </p>
-              <a href="#"><i class="fa-duotone fa-solid fa-arrow-up-right-from-square"></i></a>
+              <h3>resume skill extractor</h3>
+              <p>Easily analyze resumes and extract key skills with this smart tool! Whether you're a recruiter or job seeker, streamline the hiring process by identifying relevant qualifications quickly. Check it out now on GitHub </p>
+              <a href="https://rsextractor.netlify.app/"><i class="fa-duotone fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
           </div>
           <div class="work">
             <img src="work-3.png" alt="">
             <div class="layer">
               <h3>Online Shopping App</h3>
-              <p>this app connets you to talented people around the world Download it from playstore. </p>
+              <p>coming soon</p>
               <a href="#"><i class="fa-duotone fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
           </div>
@@ -193,9 +199,10 @@
               <a href="https://www.instagram.com/stxxcsxnny/"><i class="fa-brands fa-instagram"></i></a>
               <a href=""><i class="fa-brands fa-facebook"></i></a>
               <a href=""><i class="fa-brands fa-twitter"></i></a>
-              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href="www.linkedin.com/in/stxxcsxnny"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/stxxcsxnny"><i class="fa-brands fa-github"></i></a>
             </div>
-            <a href="Cv.png" class="btn bt2 " download="">Download Cv</a>
+            <a href="./resume.pdf" class="btn bt2 " download="">Download Cv</a>
           </div>
 
           <div class="con-right">
@@ -233,6 +240,37 @@
           .catch(error => console.error('Error!', error.message))
       })
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed("#typed", {
+    strings: ["Developer", "UI/UX Designer", "Full Stack Learner"],
+    typeSpeed: 80,
+    backSpeed: 40,
+    cursorChar: "✨",
+    loop: true
+  });
+</script>
+
+
+<script>
+  var typed = new Typed("#typed1", {
+    strings: ["UI Designer", "Full Stack Developer"],
+    typeSpeed: 60,
+    backSpeed: 30,
+    backDelay: 1500,
+    loop: true,
+    showCursor: true,
+    cursorChar: "✨",
+    smartBackspace: true,
+    fadeOut: true, // Enables fade effect
+    fadeOutDelay: 500, // Controls fade-out speed
+    onStringTyped: function() {
+      document.querySelector("#typed1").style.transform = "scale(1.1)"; // Adds a slight zoom effect
+    }
+  });
+</script>
+
+
 </body>
 
 </html>
