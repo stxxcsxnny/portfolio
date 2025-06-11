@@ -1,67 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-    <!-- Code snippet to create a "breathe" animation effect with a variable font -->
-      <style> 
-        /* The @font-face rule is used to define a custom font that you want to use on your webpage. Here 'TheFont' is a name we give to reference the font later in CSS. The 'src' property specifies the path to the font file, and 'format' specifies the font format. */
-        @font-face {
-        font-family: 'TheFont';
-        
-        /* Variable fonts like the one linked below allow for fine-tuned control over various font properties dynamically via CSS, such as weight ('wght'), width ('wdth'), etc. This link is where your web browser will download the font from. */
-        /* Insert the link to your custom variable font */
-        src: url("https://garet.typeforward.com/assets/fonts/shared/TFMixVF.woff2")
-          format('woff2'); }
-    
-    
-      body.breathe-animation {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* Change the Background color of the entire screen */
-        background-color: black;
-        /* 'vw' is a viewport-width unit, 'vh' is a viewport-height unit. 1vw equals 1% of the width of the viewport, and 1vh equals 1% of the height of the viewport. This allows the font size to scale dynamically with the window size. */
-        height: 100vh;
-      }
-    
-      .breathe-animation span {
-        font-family: 'TheFont';
-      
-        /* The 'clamp()' function sets a flexible font size that will never go below a minimum value and never above a maximum value. The middle value is preferred, but it will shrink or grow based on the viewport dimensions. */
-        /* Adjusts font size based on content width and viewport height */
-        font-size: clamp(1vw, 2vw, 5vh);
-      
-        /* Change this to set the text color */
-        color: rgb(200, 26, 26);
-      
-        /* Center text horizontally */
-        text-align: center; 
-      
-        /* The 'animation' property applies the 'letter-breathe' keyframes to the element, making it animate over 3 seconds.'ease-in-out' makes the movement start and end slowly, and 'infinite' makes it repeat forever. */
-        /* Controls the animation (3s is the duration) */
-        animation: letter-breathe 3s ease-in-out infinite;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Random Skill Animation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --bgColor: #000;
+      --textColor: #fff;
     }
-      
-      /* Keyframes define the sequence of styles that an element will go through during an animation. */
-      @keyframes letter-breathe {
-       
-        /* The 'from' and 'to' keyframes establish the initial and final states of the animation, respectively, using 'font-variation-settings'. This CSS property is used with variable fonts to adjust their weight ('wght'), width ('wdth'), etc., during the animation. */
-        from,
-        to {
-          /* Starting weight; adjust the numbers according to your specific font */
-          font-variation-settings: 'wght' 100;
-        }
-    
-        /* At the midpoint (50%) of the animation, the font weight changes to 900. */
-        50% {
-          /* Ending weight; adjust the numbers according to your specific font */
-          font-variation-settings: 'wght' 900;
-        }
-      }
-      </style>
-    </head>
-    
-    <body class="breathe-animation">
-      <!-- Change this letter to test a different one -->
-      <span>sunnyiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</span>
-    </body>
 
-  
+    body {
+      margin: 0;
+      font-family: 'Exo 2', sans-serif;
+      background-color: var(--bgColor);
+      color: var(--textColor);
+      overflow: hidden;
+    }
+
+    #skills-circle {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .circle-skills {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .skill {
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      background: #f4f4f4;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+      color: #000;
+      text-align: center;
+      padding: 10px;
+      transition: all 1.5s ease;
+    }
+
+    .skill:hover {
+      transform: scale(1.1);
+      box-shadow: 0 10px 25px rgba(250, 8, 8, 0.7);
+    }
+
+    .icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .descr {
+      font-size: 0.75rem;
+      color: #444;
+    }
+
+  </style>
+</head>
+<body>
+  <section id="skills-circle">
+    <div class="circle-skills" id="skills">
+      <div class="skill"><div class="icon"><i class="fa-brands fa-html5"></i></div><div class="title">HTML</div><div class="descr">Semantic & SEO</div></div>
+      <div class="skill"><div class="icon"><i class="fa-brands fa-css3-alt"></i></div><div class="title">CSS</div><div class="descr">Modern Styling</div></div>
+      <div class="skill"><div class="icon"><i class="fa-brands fa-js"></i></div><div class="title">JavaScript</div><div class="descr">Dynamic UI</div></div>
+      <div class="skill"><div class="icon"><i class="fa-brands fa-react"></i></div><div class="title">React</div><div class="descr">Component-Based</div></div>
+      <div class="skill"><div class="icon"><i class="fa-brands fa-node-js"></i></div><div class="title">Node.js</div><div class="descr">Backend Runtime</div></div>
+      <div class="skill"><div class="icon"><i class="fa-brands fa-git-alt"></i></div><div class="title">Git</div><div class="descr">Version Control</div></div>
+      <div class="skill"><div class="icon"><i class="fa-brands fa-codepen"></i></div><div class="title">C++</div><div class="descr">Programming</div></div>
+    </div>
+  </section>
+
+  <script>
+    const skills = document.querySelectorAll('.skill');
+    const container = document.getElementById('skills');
+
+    function randomizePositions() {
+      const containerWidth = container.offsetWidth;
+      const containerHeight = container.offsetHeight;
+
+
+      skills.forEach(skill => {
+        const x = Math.random() * (containerWidth - 100);
+        const y = Math.random() * (containerHeight - 100);
+
+        skill.style.left = `${x}px`;
+        skill.style.top = `${y}px`;
+      });
+    }
+
+    // Initial position
+    randomizePositions();
+
+    // Update every 4 seconds
+    setInterval(randomizePositions, 2000);
+  </script>
+</body>
+</html>

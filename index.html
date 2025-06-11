@@ -22,7 +22,8 @@
           <li><a href="#header">home</a></li>
           <li><a href="#about">about</a></li>
           <li><a href="#service">services</a></li>
-          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#portfolio">Projects</a></li>
           <li><a href="#contact">contact</a></li>
           <i class="fas fa-times " onclick="closemenu()"></i>
         </ul>
@@ -33,10 +34,9 @@
         <div class="header-text">
           <h1>
 
-            Hi, I'm<span> sunny</span><br/>
+            Hi, I'm <span> sunny</span>
             from india <br>
-              
-            <p><span id="typed1"></span></p>
+            <p><span  id="typed1"></span></p>
 
           </h1>
           
@@ -46,77 +46,121 @@
             </div>
           </div>
         </div>
+    </div>
+  </div>
 
-          <div class="picture">
-            <div class="background">
-              <img src="ss.2024.png" alt="">
-            </div>
-          </div>
-
-        <h1 class="intro-text">
-
-            Hi, I'm<span> sunny</span>
-            from india <br>
-           <p><span id="typed"></span></p>
-
-          </h1>
+  <div class="overview">
+    <p>INTRODUCTION</p>
+    <h1>Overview</h1>
+    <div class="picture"><img src="ss.2024.png" alt=""></div>
+    <div class="button"  ><button><a href="./resume.pdf"  target="_blank">Resume</a></button>
+      <button ><a href="www.linkedin.com/in/stxxcsxnny">linkedin</a></button>
+      <button ><a href="https://github.com/stxxcsxnny">Github</a></button>
     </div>
   </div>
     <!--- ---------------about------------ -->
 
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="aboutpic.png" alt="" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">about me</h1>
-            <p>
-              I am an enthusiastic and dedicated MCA integrated student with a strong passion for coding. With a keen
-              interest in programming languages and technology, I am always eager to learn and explore new coding
-              practices. Whether it’s working on complex algorithms, developing innovative software solutions, or diving
-              into the intricacies of C++, I approach every challenge with curiosity and determination. As a budding
-              programmer, I am committed to honing my skills and contributing to the tech community, making the most of
-              every opportunity to grow and excel in the field of computer science.
-            </p>
-            <div class="tab-titles">
-              <p class="tab-link active-link" onclick="opentab('Skills')">
-                Skills
-              </p>
+  <div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="Screenshot 2025-01-03 231501.png" alt="Profile Image" />
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+      <p>👨‍💻 I'm an enthusiastic and dedicated MCA integrated student with a deep passion for coding.</p><p>🎓 Fueled by curiosity, I thrive in exploring programming languages, diving into complex algorithms, and building innovative software solutions.</p><p>🛠 From mastering C++ intricacies to developing scalable applications, I approach every challenge with determination and creativity.</p><p>🔧 Committed to honing my skills and contributing to the tech community, I embrace every opportunity to grow and make an impact.</p><p>💡 Always learning, always building—ready to shape the future of technology.</p>
 
-              <p class="tab-link" onclick="opentab('experience')">Experiance</p>
-              <p class="tab-link" onclick="opentab('Education')">Education</p>
-            </div>
-            <div class="tab-content active-tab" id="Skills">
-              <ul>
-                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
-                <li><span>web Development</span><br />Web app development</li>
-                <li>
-                  <span>App Development</span><br />Building Android/ios apps
-                </li>
-              </ul>
-            </div>
-            <div class="tab-content" id="experience">
-              <ul>
-                <li><span>years..</span><br />......................s</li>
-                <li><span>otheryears </span><br />----------------------</li>
-                <li><span>otheryears</span><br />_________________________</li>
-              </ul>
-            </div>
-            <div class="tab-content" id="Education">
-              <ul>
-                <li><span>2022</span><br />web design</li>
-                <li>
-                  <span>2022-present</span><br />MCA(integrated) from rbs campus
-                </li>
-                <li><span></span><br /></li>
-              </ul>
-            </div>
-          </div>
+        <div class="tab-titles">
+          <p class="tab-link active-link" onclick="opentab('Skills')">Skills</p>
+          <p class="tab-link" onclick="opentab('experience')">Experience</p>
+          <p class="tab-link" onclick="opentab('Education')">Education</p>
+        </div>
+
+        <div class="tab-content active-tab" id="Skills">
+          <ul>
+            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+            <li><span>Web Development</span><br>Building interactive web applications</li>
+            <li><span>App Development</span><br>Creating Android/iOS applications</li>
+          </ul>
+        </div>
+
+        <div class="tab-content" id="experience">
+          <ul>
+            <li><span>Unified Mentor</span><br>15-11-24 to 15-11-24</li>
+            <li><span>Other Years</span><br>----------------------</li>
+            <li><span>Other Years</span><br>_________________________</li>
+          </ul>
+        </div>
+
+        <div class="tab-content" id="Education">
+          <ul>
+            <li><span>2022</span><br>Web Design Certification</li>
+            <li><span>2022-Present</span><br>MCA (Integrated) from RBS Management Technical Campus</li>
+          </ul>
         </div>
       </div>
     </div>
+  </div>
+</div>
+<!-- --------- Skills (Visual Cards) --------- -->
+<section id="skills-circle">
+  <h1 class="sub-title"> Skills</h1>
+  <ol class="circle-skills">
+    <li>
+      <div class="icon"><i class="fa-brands fa-html5"></i></div>
+      <div class="title">HTML</div>
+      <div class="descr">Semantic structure and SEO-friendly markup.</div>
+    </li>
+    <li>
+      <div class="icon"><i class="fa-brands fa-css3-alt"></i></div>
+      <div class="title">CSS</div>
+      <div class="descr">Responsive and modern design layouts.</div>
+    </li>
+    <li>
+      <div class="icon"><i class="fa-brands fa-js"></i></div>
+      <div class="title">JavaScript</div>
+      <div class="descr">Interactive features and dynamic UI handling.</div>
+    </li>
+    <li>
+      <div class="icon"><i class="fa-brands fa-react"></i></div>
+      <div class="title">React</div>
+      <div class="descr">Building SPAs and component-based UIs.</div>
+    </li>
+    <li>
+      <div class="icon"><i class="fa-brands fa-node-js"></i></div>
+      <div class="title">Node.js</div>
+      <div class="descr">Server-side scripting and REST APIs.</div>
+    </li>
+    <li>
+      <div class="icon"><i class="fa-brands fa-git-alt"></i></div>
+      <div class="title">Git</div>
+      <div class="descr">Version control & team collaboration.</div>
+    </li>
+    <li>
+      <div class="icon"><i class="fa-brands fa-codepen"></i></div>
+      <div class="title">C++</div>
+      <div class="descr">Responsive design and UI components.</div>
+    </li>
+   
+    
+  </ol>
+</section>
+<!-- --------- Certificates --------- -->
+
+     <div id="certificates">
+    <div class="container">
+        <h1 class="sub-title">My Certificates</h1>
+        <div class="cert-list">
+            <div class="cert">
+                <img src="cert-intern-gen_page-0001.jpg" alt="Guvi Certification" width="100%">
+            </div>
+            <div class="cert">
+                <img src="GuviCertification - 21u170tW47Q98189PX.png" alt="Guvi Certification" width="100%">
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
     <!----------service--------------->
     <div id="service">
       <div class="container">
@@ -155,7 +199,7 @@
     <!------------------------portfolio------------------------------------->
     <div id="portfolio">
       <div class="container">
-        <h1 class="sub-title">My work</h1>
+        <h1 class="sub-title">Projects</h1>
         <div class="work-list">
           <div class="work">
             <img src="converted_output.gif" alt="">
@@ -219,7 +263,7 @@
       </div>
       <div class="copyright">
 
-        <p>copyright &#169 sunny. made by <i class="fas fa-heart"></i> me </p>
+        <p>copyright &#169 sunny. made by me </p>
       </div>
     </div>
     <script type="text/javascript" src="your-example.js"></script>
